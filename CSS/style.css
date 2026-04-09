@@ -338,3 +338,137 @@ footer a:hover{
         margin: 4rem auto;
     }
 }
+
+/* --- STYLE PAGE CONTACT --- */
+
+.section-contact {
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+    align-items: flex-start;
+}
+
+/* Infos de contact */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: var(--violet-fonce);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 2rem;
+    color: var(--gris-très-fonce);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--gris-très-fonce);
+}
+
+.info-item i {
+    color: var(--violet-doux);
+    font-size: 1.4rem;
+}
+
+/* Boutons WhatsApp / Telegram */
+.social-contact {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.btn-social {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.btn-social:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Formulaire */
+.contact-form-container {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--gris-très-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Responsive Contact */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .social-contact {
+        flex-wrap: wrap;
+    }
+}
